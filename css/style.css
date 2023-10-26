@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Righteous&display=swap');
 
 /* General css */
 
@@ -7,6 +8,7 @@ html,
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
 
 a {
@@ -14,6 +16,10 @@ a {
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     display: inline-block;
+}
+
+b {
+    font-weight: 700;
 }
 
 a:focus,
@@ -59,18 +65,41 @@ img {
     -o-border-radius: 40px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
+    min-width: 132px;
 }
 
 .btn-blue {
-    border-radius: 20px;
+    border-radius: 40px;
     background: #30235B;
     border: 2px solid #30235B;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-blue:hover,
+.btn-blue:focus {
     background: #ffffff;
     color: #30235B;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.btn-red {
+    border-radius: 40px;
+    background: #D23200;
+    border: 2px solid #D23200;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    background: #ffffff;
+    color: #D23200;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
@@ -138,9 +167,9 @@ img {
     padding: 20px 0;
 }
 
-.site-header a {
+.site-header a.logo {
     width: 150px;
-    height: 100px;
+    /* height: 100px; */
 }
 
 .intro-slide {
@@ -364,7 +393,7 @@ img {
         height: 45px !important;
     } */
     .btn {
-        /* height: 45px !important; */
+        height: 45px !important;
         font-size: 14px;
     }
     .intro-slide h2 {
@@ -391,7 +420,7 @@ img {
     .form-wrap {
         padding: 15px;
     }
-    .site-header a {
+    .site-header a.logo {
         width: 110px;
         height: 65px;
     }
